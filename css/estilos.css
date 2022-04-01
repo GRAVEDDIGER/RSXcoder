@@ -463,6 +463,7 @@ li>ol{justify-content: center;margin: auto;}
             left:100%;
             top: 0;
         }
+        
         header {
             justify-content: flex-start;
             padding-bottom: 40px;
