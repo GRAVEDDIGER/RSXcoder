@@ -33,9 +33,15 @@
     }
 
     header {
+<<<<<<< HEAD
         margin: 5px 5px 0 5px;
         padding: 0 20px;
         padding-bottom: 20px;
+=======
+        margin: 5px;
+        padding: 0px;
+        padding-bottom: 40px;
+>>>>>>> 1f571279b84dbb30fdf2ffe34ed829956b2035f4
         display: flex;
         grid-area: cabeza;
         flex-direction: row;
