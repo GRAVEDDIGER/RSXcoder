@@ -33,22 +33,17 @@
     }
 
     header {
-<<<<<<< HEAD
-        margin: 5px 5px 0 5px;
-        padding: 0 20px;
-        padding-bottom: 20px;
-=======
         margin: 5px;
+        margin-top: 10px;
+        padding-top: 20px;
         padding: 0px;
         padding-bottom: 40px;
->>>>>>> 1f571279b84dbb30fdf2ffe34ed829956b2035f4
         display: flex;
         grid-area: cabeza;
         flex-direction: row;
         flex-wrap: nowrap;
         border-bottom: var(--grisOscuro) solid 8px;
             align-items: center;
-            align-content: center;
 
     }
 
@@ -200,8 +195,10 @@ transition: all 0.4s ease;}
     /* margin: 0px auto; */
     text-align: center;
     display: flex;
-    flex-flow: column no wrap;
-justify-content: center;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+
 }
 .mapas {
     text-align: center;
@@ -217,7 +214,8 @@ justify-content: center;
 .divform {
     display: flex;
     flex-flow: column nowrap;
-    width: 30%;
+    width: 100%;
+    justify-content: center;
     text-align: center;
     margin: 20px auto;
     border: #dad5d5 solid 3px
@@ -231,14 +229,12 @@ justify-content: center;
     border: #dad5d5 solid 4px;
 }
 
-.toggler:checked{
-    content: '+';
-}
 .textoHeader {
         display: flex;
         flex-flow: column nowrap;
         justify-content: space-around;
-        margin:  5 0;
+        margin:  10px 0px;
+        padding-top: 15px;
         text-align: center;
         line-height: 1.5;
         font-family: 'Montserrat', sans-serif;
@@ -253,6 +249,8 @@ header >a{
     justify-content: space-between;
 }    
     .logo {
+        margin-top: 15px;
+        padding-top: 15px;
         width: 180px;
         transition: all 0.4s ease;
         align-items: center;
