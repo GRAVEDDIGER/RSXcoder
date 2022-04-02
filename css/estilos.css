@@ -33,14 +33,17 @@
     }
 
     header {
-        margin: 5px;
-        padding: 20px;
-        padding-bottom: 40px;
+        margin: 5px 5px 0 5px;
+        padding: 0 20px;
+        padding-bottom: 20px;
         display: flex;
         grid-area: cabeza;
         flex-direction: row;
         flex-wrap: nowrap;
         border-bottom: var(--grisOscuro) solid 8px;
+            align-items: center;
+            align-content: center;
+
     }
 
     main {
@@ -100,10 +103,10 @@
         font-weight: bold;
         background-color: #fff;
     }
-
+p{font-size: 18px;}
     h4 {
         text-align: center;
-        font-size: 30px;
+        font-size: 32px;
         color: var(--celesteClaro);
         margin: 15px 25px;
     }
@@ -140,26 +143,105 @@
         text-align: center;
         width: 20vw;
         transition: all 0.4 ease;
-}
+        animation-name: aniSub;
+        animation-duration: 1s;
+        border-top: #dad5d5 solid 4px;        
+        margin-top: -3px;
+    }
+    @keyframes aniSub{
+        0% {left:0%;opacity:0;transform: scale(0);}
+        100%{left:100%;opacity:1;transform: scale(1);}
+    }
 .ile {
     background-color: green;
     
     color: white;
     font-weight: 400;
 }
+.imagenCentroI {
+    vertical-align: top;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    width: 29%;
+    border: #dad5d5 solid 8px;
+    float: left;
+}
+.descargas {
+    display: inline-block;
+    text-align: center;
+    background-color: ;
+    /* border: #dad5d5 solid 2px; */
+    width: 78vw;
+    padding: 10px 0px;
+    margin: 50px 0 50px -15px;
+transition: all 0.4s ease;}
+.descargas a {
+    padding: 10px 20px;
+    border: #dad5d5 solid 1px;
+}
+.descargas a:hover {
+    border: #11BFBF solid 3px;
+    background-color: #dad5d5;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+.contenedorImagenesDescargas {
+    text-align: center;
+    margin: 0 15px;
+}
+.formulario {
+    /* margin: 0px auto; */
+    text-align: center;
+    display: flex;
+    flex-flow: column no wrap;
+justify-content: center;
+}
+.mapas {
+    text-align: center;
+    /* background-color: #11BFBF; */
+    margin-top: 25px;
+
+}
+.diversidad{
+    transition: background-image 2s ease;
+        background-image: linear-gradient(to right, yellow, red, orange, blue, violet, green);
+    color: #fff;
+}
+.divform {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 30%;
+    text-align: center;
+    margin: 20px auto;
+    border: #dad5d5 solid 3px
+}
+
+
+.imagenesDescargas {
+    width: 30vw;
+    height: 281px;
+    margin: 0 30px;
+    border: #dad5d5 solid 4px;
+}
+
 .toggler:checked{
     content: '+';
 }
 .textoHeader {
         display: flex;
         flex-flow: column nowrap;
-        /* justify-content: space-around; */
+        justify-content: space-around;
+        margin:  5 0;
         text-align: center;
         line-height: 1.5;
         font-family: 'Montserrat', sans-serif;
 
     }
-
+.mapasServicios {margin-left: 15px;
+    margin-bottom: 15px;
+    float: right;
+}
 header >a{
     width: 180px;
     justify-content: space-between;
@@ -167,6 +249,8 @@ header >a{
     .logo {
         width: 180px;
         transition: all 0.4s ease;
+        align-items: center;
+        align-content: center;
     }
 .logo:hover
 {
