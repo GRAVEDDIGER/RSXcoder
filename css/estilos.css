@@ -34,7 +34,7 @@
 
     header {
         margin: 5px;
-        padding: 20px;
+        padding: 0;
         padding-bottom: 40px;
         display: flex;
         grid-area: cabeza;
