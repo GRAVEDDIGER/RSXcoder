@@ -589,4 +589,16 @@ li>ol{justify-content: center;margin: auto;}
             padding-bottom: 40px;
 
         }
+        .mapas{
+            width: 640px;
+            height: 60vh;
+            justify-content: center;
+        }
+        .mapasCont{
+            width: 100%;
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+            align-items: center;
+        }
     }
