@@ -354,7 +354,23 @@ header >a{
             row-gap: 5px;
             column-gap: 5px;
         }
-
+        .descargas{
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+            align-items: center;
+            margin-left: 20px;
+     
+        }
+        .imagenCentroI , .imagenesDescargas{
+            width: 100%;
+            margin: 10px 0px;
+        }
+        .mapasServicios , .mapas{
+            width: 100%;
+            margin-left: 0px;
+        }
+        
         .menu {
             width: 100vw;
             height: 120vh;
@@ -445,10 +461,26 @@ header >a{
             row-gap: 5px;
             column-gap: 5px;
         }
-
+        .descargas{
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+            margin: 10px;
+            padding: 10px;
+        }
+        .imagenCentroI , .imagenesDescargas{
+            width: 100%;
+            margin: 10px 0px;
+        }
+        
+        .mapasServicios , .mapas{
+            width: 100%;
+            height: 60vh;
+            margin-left: 0px;
+        }
         .menu {
             width: 100vw;
-            height: 120vh;
+            height: 190vh;
         }
 
         .imgCentro {
