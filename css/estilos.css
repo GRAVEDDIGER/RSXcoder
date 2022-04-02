@@ -33,17 +33,16 @@
     }
 
     header {
-        margin: 5px;
-        margin-top: 10px;
-        padding-top: 20px;
-        padding: 0px;
-        padding-bottom: 40px;
+        margin: 5px 5px 0 5px;
+        padding: 0 20px;
+        padding-bottom: 20px;
         display: flex;
         grid-area: cabeza;
         flex-direction: row;
         flex-wrap: nowrap;
         border-bottom: var(--grisOscuro) solid 8px;
             align-items: center;
+            align-content: center;
 
     }
 
@@ -55,7 +54,10 @@
     footer {
         grid-area: pies;
         border-top: var(--grisOscuro) solid 8px;
-    }
+display: flex; 
+flex-flow: row nowrap;  
+justify-content: space-between;
+text-align: left; }
 
     nav {
         grid-area: menu;
@@ -195,15 +197,14 @@ transition: all 0.4s ease;}
     /* margin: 0px auto; */
     text-align: center;
     display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
-
+    flex-flow: column no wrap;
+justify-content: center;
 }
 .mapas {
     text-align: center;
     /* background-color: #11BFBF; */
     margin-top: 25px;
+    width:640px;
 
 }
 .diversidad{
@@ -214,8 +215,7 @@ transition: all 0.4s ease;}
 .divform {
     display: flex;
     flex-flow: column nowrap;
-    width: 100%;
-    justify-content: center;
+    width: 30%;
     text-align: center;
     margin: 20px auto;
     border: #dad5d5 solid 3px
@@ -229,12 +229,14 @@ transition: all 0.4s ease;}
     border: #dad5d5 solid 4px;
 }
 
+.toggler:checked{
+    content: '+';
+}
 .textoHeader {
         display: flex;
         flex-flow: column nowrap;
         justify-content: space-around;
-        margin:  10px 0px;
-        padding-top: 15px;
+        margin:  5 0;
         text-align: center;
         line-height: 1.5;
         font-family: 'Montserrat', sans-serif;
@@ -249,8 +251,6 @@ header >a{
     justify-content: space-between;
 }    
     .logo {
-        margin-top: 15px;
-        padding-top: 15px;
         width: 180px;
         transition: all 0.4s ease;
         align-items: center;
@@ -278,10 +278,11 @@ header >a{
     .izquierda {
         display: flex;
         flex-flow: row nowrap;
-        width: 15%;
+        width: 45%;
         float: left;
         padding: 10px 40px;
         font-weight: bold;
+        overflow: visible;
     }
 
     .derecha {
@@ -341,7 +342,7 @@ header >a{
     }
 
     /*celular pequeño*/
-    @media (max-width: 479px) {
+    @media (max-width: 479px) {git
         .grids {
             display: grid;
             grid-template-areas:
@@ -354,23 +355,7 @@ header >a{
             row-gap: 5px;
             column-gap: 5px;
         }
-        .descargas{
-            display: flex;
-            flex-flow: column nowrap;
-            justify-content: center;
-            align-items: center;
-            margin-left: 20px;
-     
-        }
-        .imagenCentroI , .imagenesDescargas{
-            width: 100%;
-            margin: 10px 0px;
-        }
-        .mapasServicios , .mapas{
-            width: 100%;
-            margin-left: 0px;
-        }
-        
+
         .menu {
             width: 100vw;
             height: 120vh;
@@ -461,26 +446,10 @@ header >a{
             row-gap: 5px;
             column-gap: 5px;
         }
-        .descargas{
-            display: flex;
-            flex-flow: column nowrap;
-            justify-content: center;
-            margin: 10px;
-            padding: 10px;
-        }
-        .imagenCentroI , .imagenesDescargas{
-            width: 100%;
-            margin: 10px 0px;
-        }
-        
-        .mapasServicios , .mapas{
-            width: 100%;
-            height: 60vh;
-            margin-left: 0px;
-        }
+
         .menu {
             width: 100vw;
-            height: 190vh;
+            height: 120vh;
         }
 
         .imgCentro {
@@ -557,7 +526,8 @@ li>ol{justify-content: center;margin: auto;}
             row-gap: 5px;
             column-gap: 5px;
         }
-
+        .mapas{width: 100%;
+        height: 60vh;}
         .menu {
             width: 20vw;
         }
