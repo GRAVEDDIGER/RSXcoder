@@ -251,7 +251,7 @@ header >a{
     .logo {
         margin-top: 15px;
         padding-top: 15px;
-        width: 180px;
+        width: 150px;
         transition: all 0.4s ease;
         align-items: center;
         align-content: center;
@@ -400,7 +400,7 @@ header >a{
         }
 
         .textoHeader {
-            font-size: 18px;
+            font-size: 16px;
             justify-content: center;
             align-content: center;
             margin: 0;
@@ -408,11 +408,11 @@ header >a{
         }
 
         h1 {
-            font-size: 20px;
+            font-size: 18px;
         }
 
         h2 {
-            font-size: 18px;
+            font-size: 16px;
         }
         ol {
             justify-content: center;
@@ -508,7 +508,7 @@ header >a{
         }
 
         .textoHeader {
-            font-size: 18px;
+            font-size: 16px;
             justify-content: center;
         }
 
