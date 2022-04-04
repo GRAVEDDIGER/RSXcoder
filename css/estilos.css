@@ -6,7 +6,7 @@
     /*estilos generales*/
     :root {
         --grisClaro: #dad5d5;
-        --grisClaroTransparencia: rgba(238,236,236,0.75);
+        --grisClaroTransparencia: rgba(238, 236, 236, 0.75);
         --celesteClaro: #11BFBF;
         --grisOscuro: #7D7D7D;
         --fuenteNormal: #000;
@@ -43,7 +43,7 @@
         flex-direction: row;
         flex-wrap: nowrap;
         border-bottom: var(--grisOscuro) solid 8px;
-            align-items: center;
+        align-items: center;
 
     }
 
@@ -55,6 +55,11 @@
     footer {
         grid-area: pies;
         border-top: var(--grisOscuro) solid 8px;
+        height: 10vh;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
     }
 
     nav {
@@ -104,36 +109,50 @@
         font-weight: bold;
         background-color: #fff;
     }
-p{font-size: 18px;}
+
+    p {
+        font-size: 18px;
+    }
+
     h4 {
         text-align: center;
         font-size: 32px;
         color: var(--celesteClaro);
         margin: 15px 25px;
     }
-    .menu>ul{
+
+    .menu>ul {
         position: relative;
     }
-.toggler{
-    opacity: 0;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    left: 0;
-    top: 0;
-    z-index: 3;
-}
-.toggler:hover +a{cursor:pointer;
+
+    .toggler {
+        opacity: 0;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 3;
+    }
+
+    .derecha {
+        height: 100%;
+    }
+
+    .toggler:hover+a {
+        cursor: pointer;
         color: var(--celesteClaro);
         border-right: solid var(--grisClaro) 4px;
         border-bottom: solid var(--grisClaro) 4px;
         font-weight: bold;
         background-color: #fff;
-}
-.toggler:hover{
-    cursor: pointer;
-}
-.toggler:checked ~ol{
+    }
+
+    .toggler:hover {
+        cursor: pointer;
+    }
+
+    .toggler:checked~ol {
         display: flex;
         flex-flow: column nowrap;
         flex: content;
@@ -146,108 +165,119 @@ p{font-size: 18px;}
         transition: all 0.4 ease;
         animation-name: aniSub;
         animation-duration: 1s;
-        border-top: #dad5d5 solid 4px;        
+        border-top: #dad5d5 solid 4px;
         margin-top: -3px;
     }
-    @keyframes aniSub{
-        0% {left:0%;opacity:0;transform: scale(0);}
-        100%{left:100%;opacity:1;transform: scale(1);}
+
+    .ile {
+        background-color: green;
+
+        color: white;
+        font-weight: 400;
     }
-.ile {
-    background-color: green;
-    
-    color: white;
-    font-weight: 400;
-}
-.imagenCentroI {
-    vertical-align: top;
-    margin-right: 20px;
-    margin-bottom: 20px;
-    width: 29%;
-    border: #dad5d5 solid 8px;
-    float: left;
-}
-.descargas {
-    display: inline-block;
-    text-align: center;
-    background-color: ;
-    /* border: #dad5d5 solid 2px; */
-    width: 78vw;
-    padding: 10px 0px;
-    margin: 50px 0 50px -15px;
-transition: all 0.4s ease;}
-.descargas a {
-    padding: 10px 20px;
-    border: #dad5d5 solid 1px;
-}
-.descargas a:hover {
-    border: #11BFBF solid 3px;
-    background-color: #dad5d5;
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-}
-.contenedorImagenesDescargas {
-    text-align: center;
-    margin: 0 15px;
-}
-.formulario {
-    /* margin: 0px auto; */
-    text-align: center;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
 
-}
-.mapas {
-    text-align: center;
-    /* background-color: #11BFBF; */
-    margin-top: 25px;
+    .imagenCentroI {
+        vertical-align: top;
+        margin-right: 20px;
+        margin-bottom: 20px;
+        width: 29%;
+        border: #dad5d5 solid 8px;
+        float: left;
+    }
 
-}
-.diversidad{
-    transition: background-image 2s ease;
+    .descargas {
+        display: inline-block;
+        text-align: center;
+        background-color: ;
+        /* border: #dad5d5 solid 2px; */
+        width: 78vw;
+        padding: 10px 0px;
+        margin: 50px 0 50px -15px;
+        transition: all 0.4s ease;
+    }
+
+    .descargas a {
+        padding: 10px 20px;
+        border: #dad5d5 solid 1px;
+    }
+
+    .descargas a:hover {
+        border: #11BFBF solid 3px;
+        background-color: #dad5d5;
+        color: #fff;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    .contenedorImagenesDescargas {
+        text-align: center;
+        margin: 0 15px;
+    }
+
+    .formulario {
+        /* margin: 0px auto; */
+        text-align: center;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .mapas {
+        text-align: center;
+        /* background-color: #11BFBF; */
+        margin-top: 25px;
+
+    }
+
+    .diversidad {
+        transition: background-image 2s ease;
         background-image: linear-gradient(to right, yellow, red, orange, blue, violet, green);
-    color: #fff;
-}
-.divform {
-    display: flex;
-    flex-flow: column nowrap;
-    width: 100%;
-    justify-content: center;
-    text-align: center;
-    margin: 20px auto;
-    border: #dad5d5 solid 3px
-}
+        color: #fff;
+    }
+
+    .divform {
+        display: flex;
+        flex-flow: column nowrap;
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+        margin: 20px auto;
+        border: #dad5d5 solid 3px
+    }
 
 
-.imagenesDescargas {
-    width: 30vw;
-    height: 281px;
-    margin: 0 30px;
-    border: #dad5d5 solid 4px;
-}
+    .imagenesDescargas {
+        width: 30vw;
+        height: 281px;
+        margin: 0 30px;
+        border: #dad5d5 solid 4px;
+    }
 
-.textoHeader {
+    .textoHeader {
         display: flex;
         flex-flow: column nowrap;
         justify-content: space-around;
-        margin:  10px 0px;
+        margin: 10px 0px;
         padding-top: 15px;
         text-align: center;
         line-height: 1.5;
         font-family: 'Montserrat', sans-serif;
 
     }
-.mapasServicios {margin-left: 15px;
-    margin-bottom: 15px;
-    float: right;
-}
-header >a{
-    width: 180px;
-    justify-content: space-between;
-}    
+
+    .mapasServicios {
+        margin-left: 15px;
+        margin-bottom: 15px;
+        float: right;
+    }
+
+    header>a {
+        width: 180px;
+        justify-content: space-between;
+    }
+
     .logo {
         margin-top: 15px;
         padding-top: 15px;
@@ -256,11 +286,12 @@ header >a{
         align-items: center;
         align-content: center;
     }
-.logo:hover
-{
-    transform: scale(1.1);
-    filter: saturate(180%);
-}
+
+    .logo:hover {
+        transform: scale(1.1);
+        filter: saturate(180%);
+    }
+
     .menu {
         display: flex;
         flex-flow: column nowrap;
@@ -277,23 +308,22 @@ header >a{
 
     .izquierda {
         display: flex;
-        flex-flow: row nowrap;
-        width: 15%;
+        flex-flow: row wrap;
+
         float: left;
         padding: 10px 40px;
         font-weight: bold;
+        font-size: 16px;
     }
 
     .derecha {
         display: flex;
         height: 100%;
         flex-flow: row nowrap;
-        padding-right: 15px;
         width: 100px;
-        justify-content: space-around;
         align-items: center;
-        float: right;
-        margin-right: 40px;
+        justify-content: flex-end;
+
 
     }
 
@@ -355,26 +385,32 @@ header >a{
             row-gap: 5px;
             column-gap: 5px;
         }
-        .descargas{
+
+        .descargas {
             display: flex;
             flex-flow: column nowrap;
             justify-content: center;
             align-items: center;
             margin-left: 20px;
-     
+
         }
-        .imagenCentroI , .imagenesDescargas{
+
+        .imagenCentroI,
+        .imagenesDescargas {
             width: 100%;
             margin: 10px 0px;
         }
-        .mapasServicios , .mapas{
+
+        .mapasServicios,
+        .mapas {
             width: 100%;
             margin-left: 0px;
         }
-        
+
         .menu {
             width: 100vw;
             height: 120vh;
+            font-size: 20px;
         }
 
         .imgCentro {
@@ -392,9 +428,9 @@ header >a{
         }
 
         .logo {
-            display: none;
-            width: 32%;
-            height: 140%;
+            width: 100px;
+            margin: 0px;
+            padding: 0px;
             align-content: center;
             justify-content: center;
         }
@@ -414,13 +450,14 @@ header >a{
         h2 {
             font-size: 16px;
         }
+
         ol {
             justify-content: center;
             text-align: center;
             align-content: center;
         }
 
-        
+
 
         li>ol {
             justify-content: center;
@@ -436,15 +473,48 @@ header >a{
             text-align: center;
             border: #000 2px;
         }
+
         header {
-            justify-content: center;
+            justify-content: space-between;
             align-content: center;
             margin: 0%;
             padding: 0px;
         }
-                .toggler:checked~ol {
-                    position: relative;
-                }
+
+        .toggler:checked~ol {
+            position: relative;
+        }
+
+        @keyframes aniSub {
+            0% {
+
+                opacity: 0;
+                transform: scale(0);
+            }
+
+            100% {
+
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        .izquierda {
+            margin: 0px;
+            padding: 0px;
+            font-size: 14px;
+        }
+
+        .derecha {
+            height: 100%;
+        }
+
+        footer {
+            display: flex;
+            flex-flow: row nowrap;
+            margin: 5px;
+            justify-content: space-between;
+        }
     }
 
 
@@ -462,23 +532,28 @@ header >a{
             row-gap: 5px;
             column-gap: 5px;
         }
-        .descargas{
+
+        .descargas {
             display: flex;
             flex-flow: column nowrap;
             justify-content: center;
             margin: 10px;
             padding: 10px;
         }
-        .imagenCentroI , .imagenesDescargas{
+
+        .imagenCentroI,
+        .imagenesDescargas {
             width: 100%;
             margin: 10px 0px;
         }
-        
-        .mapasServicios , .mapas{
+
+        .mapasServicios,
+        .mapas {
             width: 100%;
             height: 60vh;
             margin-left: 0px;
         }
+
         .menu {
             width: 100vw;
             height: 190vh;
@@ -519,28 +594,48 @@ header >a{
         h2 {
             font-size: 22px;
         }
-        ol{
+
+        ol {
             justify-content: center;
-      text-align: center;
-      align-content: center;
+            text-align: center;
+            align-content: center;
         }
-li>ol{justify-content: center;margin: auto;}
-     ol>li {
-         width: 100vw;
-         justify-content: center;
-         align-items: center;
-         align-content: center;
-         background-color: var(--grisClaroTransparencia);
-         text-align: center;
-         border: #000 2px;
-     }
+
+        li>ol {
+            justify-content: center;
+            margin: auto;
+        }
+
+        ol>li {
+            width: 100vw;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            background-color: var(--grisClaroTransparencia);
+            text-align: center;
+            border: #000 2px;
+        }
+
         header {
             justify-content: space-between;
             align-items: center;
         }
-                .toggler:checked~ol {
-                    position: relative;
-                }
+
+        .toggler:checked~ol {
+            position: relative;
+        }
+
+        @keyframes aniSub {
+            0% {
+                opacity: 0;
+                transform: scale(0);
+            }
+
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
 
     }
 
@@ -578,28 +673,44 @@ li>ol{justify-content: center;margin: auto;}
             width: 45%;
             margin-left: 15px;
         }
-     
+
         .toggler:checked~ol {
             position: absolute;
-            left:100%;
+            left: 100%;
             top: 0;
         }
-        
+
         header {
             justify-content: flex-start;
             padding-bottom: 40px;
 
         }
-        .mapas{
+
+        .mapas {
             width: 640px;
             height: 60vh;
             justify-content: center;
         }
-        .mapasCont{
+
+        .mapasCont {
             width: 100%;
             display: flex;
             flex-flow: column nowrap;
             justify-content: center;
             align-items: center;
+        }
+
+        @keyframes aniSub {
+            0% {
+                left: 0%;
+                opacity: 0;
+                transform: scale(0);
+            }
+
+            100% {
+                left: 100%;
+                opacity: 1;
+                transform: scale(1);
+            }
         }
     }
