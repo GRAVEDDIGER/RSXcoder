@@ -18,6 +18,8 @@
         padding: 0;
         margin: 0;
         font-family: 'Montserrat', sans-serif;
+        box-sizing: border-box;
+
     }
 
     body {
@@ -328,7 +330,7 @@
     }
 
     .iconos {
-        width: 32px;
+        width: 48px;
         padding: 10px;
         transition: all 0.4 ease;
     }
@@ -370,7 +372,6 @@
         border-bottom: solid var(--grisClaro) 6px;
         filter: saturate(180%);
     }
-
     /*celular pequeño*/
     @media (max-width: 479px) {
         .grids {
@@ -381,7 +382,7 @@
                 "cuerpo"
                 "pies";
             grid-template-columns: 100vw;
-            grid-template-rows: 15% auto auto 10%;
+            grid-template-rows: 18% auto auto 12%;
             row-gap: 5px;
             column-gap: 5px;
         }
@@ -407,6 +408,12 @@
             margin-left: 0px;
         }
 
+.iconos {
+    width: 32px;
+    padding: 0px;
+    margin: 0px;
+
+}
         .menu {
             width: 100vw;
             height: 120vh;
@@ -528,7 +535,7 @@
                 "cuerpo"
                 "pies";
             grid-template-columns: 100vw;
-            grid-template-rows: 15% auto auto 10%;
+            grid-template-rows: 18% auto auto 14%;
             row-gap: 5px;
             column-gap: 5px;
         }
@@ -576,8 +583,6 @@
         .logo {
             width: 150px;
             height: 100px;
-            /* align-content: center;
-            justify-content: center; */
             padding: 0;
             margin: 0;
         }
@@ -649,7 +654,7 @@
                 "menu cuerpo"
                 "pies pies";
             grid-template-columns: 20% auto;
-            grid-template-rows: 20% auto 10%;
+            grid-template-rows: 20% auto 14%;
             row-gap: 5px;
             column-gap: 5px;
         }
@@ -679,12 +684,13 @@
             left: 100%;
             top: 0;
         }
-
-        header {
+        header{
+            display: flex;
+            flex-flow: row nowrap;
             justify-content: flex-start;
-            padding-bottom: 40px;
-
+            align-items: center;
         }
+
 
         .mapas {
             width: 640px;
