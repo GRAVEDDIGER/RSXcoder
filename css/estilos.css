@@ -26,11 +26,13 @@ body {
 }
 
 h1 {
-    font-size: 35px;
+    font-size: 28px;
     font-weight: bold;
     color: var(--celesteClaro);
 }
-
+h2{
+    font-size: 20px;
+}
 header {
     margin: 5px;
     margin-top: 10px;
@@ -52,7 +54,7 @@ main {
 footer {
     grid-area: pies;
     border-top: var(--grisOscuro) solid 8px;
-    height: 10vh;
+    height: 100%;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
@@ -112,7 +114,7 @@ p {
 
 h4 {
     text-align: center;
-    font-size: 32px;
+    font-size: 26px;
     color: var(--celesteClaro);
     margin: 15px 25px;
 }
@@ -294,7 +296,7 @@ header>a {
     justify-content: stretch;
     align-items: center;
     background-color: #fff;
-    font-size: 25px;
+    font-size: 22px;
 
     border-right: var(--grisClaro) solid 2px;
     text-align: center;
@@ -374,7 +376,7 @@ header>a {
             "cuerpo"
             "pies";
         grid-template-columns: 100vw;
-        grid-template-rows: 18% auto auto 12%;
+        grid-template-rows: 150px auto auto 150px;
         row-gap: 5px;
         column-gap: 5px;
     }
@@ -392,7 +394,9 @@ header>a {
         width: 100%;
         margin: 10px 0px;
     }
-
+    .imgCovid{
+        max-width: 250px;
+    }
     .mapasServicios,
     .mapas {
         width: 100%;
@@ -425,7 +429,7 @@ header>a {
     }
 
     .logo {
-        width: 100px;
+        width: 120px;
         margin: 0px;
         padding: 0px;
         align-content: center;
@@ -433,15 +437,16 @@ header>a {
     }
 
     .textoHeader {
-        font-size: 16px;
+        font-size: 22px;
         justify-content: center;
         align-content: center;
         margin: 0;
+        margin-right: 20px;
         padding: 0;
     }
 
     h1 {
-        font-size: 18px;
+        font-size: 24px;
     }
 
     h2 {
@@ -500,6 +505,7 @@ header>a {
 
     .derecha {
         height: 100%;
+        margin-right: 15px;
     }
 
     footer {
@@ -520,9 +526,9 @@ header>a {
             "cuerpo"
             "pies";
         grid-template-columns: 100vw;
-        grid-template-rows: 18% auto auto 14%;
-        row-gap: 5px;
-        column-gap: 5px;
+        grid-template-rows: 150px auto auto 150px;
+       /*  row-gap: 5px;
+        column-gap: 5px; */
     }
 
     .descargas {
@@ -559,7 +565,6 @@ header>a {
     .centro {
         display: flex;
         flex-flow: column nowrap;
-
         margin-right: 20px;
         margin-left: 20px;
     }
@@ -569,11 +574,15 @@ header>a {
         height: 100px;
         padding: 0;
         margin: 0;
+        margin-left: 15px;
     }
-
+    .derecha{
+        margin-right: 20px;
+    }
     .textoHeader {
         font-size: 16px;
         justify-content: center;
+        margin-right: 20px;
     }
 
     h1 {
@@ -581,7 +590,7 @@ header>a {
     }
 
     h2 {
-        font-size: 22px;
+        font-size: 20px;
     }
 
     ol {
@@ -664,13 +673,17 @@ header>a {
         width: 45%;
         margin-left: 15px;
     }
-
+.logo{
+    margin-left: 15px;
+}
     .toggler:checked~ol {
         position: absolute;
         left: 100%;
         top: 0;
     }
-
+.derecha{
+    margin-right: 25px;
+}
     header {
         display: flex;
         flex-flow: row nowrap;
@@ -679,7 +692,7 @@ header>a {
     }
 
     .mapas {
-        width: 640px;
+        width: 350;
         height: 60vh;
         justify-content: center;
     }
