@@ -29,7 +29,10 @@ h1 {
     font-size: 28px;
     font-weight: bold;
     color: var(--celesteClaro);
+    animation-name: logo1;
+    animation-duration: 3s;
 }
+
 h2{
     font-size: 20px;
 }
@@ -275,7 +278,9 @@ header>a {
     width: 180px;
     justify-content: space-between;
 }
-
+h1{animation-name: logo1;
+animation-duration: 3s;
+transition: all ease;}
 .logo {
     margin-top: 15px;
     padding-top: 15px;
@@ -283,7 +288,11 @@ header>a {
     transition: all 0.4s ease;
     align-items: center;
     align-content: center;
+    animation-name: logo1;
+    animation-duration: 3s;
+    animation-delay: 1s;
 }
+
 
 .logo:hover {
     transform: scale(1.1);
@@ -719,3 +728,8 @@ header>a {
         }
     }
 }
+@keyframes logo1 {
+    0% {color: royalblue;}
+    100% {color: var(--celesteClaro);}
+       
+    }
